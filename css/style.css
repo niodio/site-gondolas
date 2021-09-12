@@ -1,0 +1,385 @@
+:root {
+  --color-pastel: #ffdd8b;
+  --color-header: #c20102;
+  --color-red: #fe0000;
+  --color-menu1: #231f20;
+  --color-menu2: #1f1b1c;
+  --color-menu3: #161415;
+  --color-menu4: #0f0d0e;
+  --color-body: #ebebeb;
+  --color-mapa-do-site: #231f20;
+  --color-footer: #100e0f;
+  --color-fale-conosco: #66bd32;
+  --color-whatsapp: #25d366;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray: #ebebeb;
+  --color-link: #777576;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@100&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  color: var(--color-white);
+  font-size: 14px;
+  width: 100vw;
+}
+
+a {
+  color: var(--color-gray);
+  font-weight: bold;
+}
+
+a:hover {
+  color: var(--color-white);
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: var(--color-header);
+}
+
+header ul li {
+  color: var(--color-pastel);
+  padding: 0rem .5rem;
+  font-size: .8rem;
+}
+
+.uppercase {
+  font-weight: bold;
+  font-size: 0.7rem;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+
+button {
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
+  border-radius: 10px;
+  padding: 0.5rem 1.5rem;
+}
+
+.carousel-caption {
+  left: 40vw;
+  width: 50% !important;
+
+
+}
+
+.titulo-banner {
+  font-family: 'Roboto', sans-serif;
+  font-size: 4vw;
+  font-weight: bold;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+.btn-banner {
+  background: var(--color-pastel);
+  border: none;
+  color: var(--color-black);
+  font-weight: bold;
+}
+
+.btn-banner:hover {
+  background: #ffd8b3;
+}
+
+.txt-menu {
+  color: var(--color-pastel);
+  font-weight: bold;
+  font-size: 0.8rem;
+  font-family: Georgia, Times, Times New Roman, serif;
+}
+
+.btn-menu {
+  background: var(--color-menu1);
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.bg-1 {
+  background: var(--color-menu1);
+}
+
+.bg-2 {
+  background: var(--color-menu2);
+}
+
+.bg-3 {
+  background: var(--color-menu3);
+}
+
+.bg-4 {
+  background: var(--color-menu4);
+}
+
+ul li {
+  display: inline;
+  font-family: Georgia, Times, Times New Roman, serif;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-red);
+}
+
+
+
+.btn-search {
+  color: var(--color-white);
+  border: var(--color-white) 1px solid;
+  font-weight: bold;
+}
+
+.btn-search:hover {
+  background: var(--color-pastel);
+  color: var(--color-white);
+  border: var(--color-white) 1px solid;
+  font-weight: bold;
+}
+
+
+
+.carousel-inner img {
+  width: 100vw;
+  height: 60vh;
+  filter: brightness(27%);
+  object-fit: cover;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-caption {
+  width: 30vw;
+}
+
+.titulo {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  color: var(--color-black);
+}
+
+#owl-demo .item {
+  margin: 0px;
+}
+
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/** inicio carousel main*/
+main {
+  width: 100vw;
+  height: auto;
+  padding: 4rem;
+  background-color: var(--color-gray);
+}
+
+
+.box-produtos {
+  display: block;
+  width: 200px;
+  height: 300px;
+}
+
+.valor {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-black);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.valor-parcelado,
+.color-gray {
+  font-size: 1rem;
+  color: var(--color-link);
+  font-family: 'Open Sans', sans-serif;
+}
+
+/**  inicio entre em contato */
+section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+}
+
+section p {
+  font-family: 'Roboto', sans-serif;
+
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: justify;
+  color: var(--color-black);
+
+}
+
+section h3 {
+  font-family: 'Roboto', sans-serif;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  color: var(--color-black);
+
+}
+
+.btn-whatsapp {
+  background: var(--color-whatsapp);
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/** inicio formulario */
+
+.form-contato {
+  background-image: url("../img/background.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+.form-msg {
+
+  padding: 4rem;
+  border: #000000 solid 1px;
+}
+
+.color-red {
+  color: var(--color-red);
+}
+
+.form-contato h1,
+.form-contato p {
+  font-family: 'Roboto', sans-serif;
+
+  color: var(--color-white);
+}
+
+.btn-opacity {
+  opacity: 1;
+  border: var(--color-white) solid 1px;
+  color: var(--color-white);
+
+}
+
+.btn-opacity:hover {
+  opacity: 0.8;
+  color: var(--color-white);
+
+}
+
+/** mapa do site */
+.mapa-do-site {
+  font-family: 'Roboto', sans-serif;
+
+  background-color: var(--color-mapa-do-site);
+  width: 100%;
+  height: auto;
+
+}
+
+.lista-vertical li {
+  display: block;
+  list-style: none;
+  text-transform: uppercase;
+  padding: .5rem;
+
+  color: var(--color-white);
+}
+
+.lista-vertical li a {
+  color: var(--color-link);
+}
+
+.lista-vertical li a:hover {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.redes-sociais {
+  color: var(--color-red);
+  font-size: 2rem;
+}
+
+.color-pastel {
+  color: var(--color-pastel) !important;
+}
+
+.color-pastel:hover {
+  color: var(--color-pastel) !important;
+  text-decoration: none;
+}
+
+/** footer*/
+footer {
+  font-family: 'Roboto', sans-serif;
+
+  background-color: var(--color-footer);
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  color: var(--color-white);
+  text-align: center;
+}
+
+footer img {
+  width: 6rem;
+  height: auto;
+  color: var(--color-link);
+}
+
+footer a,
+footer a:hover,
+footer span {
+  color: var(--color-link);
+}
+
+
+/** media query*/
+@media (max-width: 575px) {
+  .center-sm {
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  
+}
